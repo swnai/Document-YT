@@ -5,132 +5,131 @@
     <div class="d-inline-flex">
         <div class="container-fluid">
             <div class="card mt-5 rounded-4" style="width:45rem; height: 25rem;">
-        
+                <iframe src="" frameborder="0" class="object-fit-cover h-100 p-1 rounded-4" id="pdf"></iframe>
             </div>
-            <h5 id="document_header" class="text-white mt-3 fs-4">Document-2</h5>
+            <h5 id="document_header" class="text-white mt-3 fs-4"></h5>
             <div class="container rounded-3 bg-dark p-3">
-                <small id="doc_desc" class="fs-6 text-white-50 d-block">Description of the Document</small>
-                <br>
-                <small id="doc_date" class="text-white-50 d-block">2 Years Ago</small>
+                <small id="doc_desc" class="fs-6 text-white-50 d-block"><p id="author"></p></small>
+                <small id="doc_desc" class="fs-6 text-white-50 d-block"><p id="descr"></p></small>
+                <small id="doc_date" class="text-white-50 d-block"><p id="pd"></p></small>
             </div>
         </div>
     </div>
-    <div class="d-inline-flex">
+    <div class="d-inline-flex container-fluid scrollspy-example" data-bs-spy="scroll"  data-bs-smooth-scroll="true" tabindex="0">
         <div class="container-fluid mt-5">
-            <div class="card mb-3" style="width: 50vh;">
+            <div class="card mb-3" style="width: 50vh;" (click)="card1('1')">
                 <div class="row g-0">
                   <div class="col-md-4">
-                    <img  src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/48/google-docs-1024.png" class="rounded" alt="..." style="width: 100%; height: 100%;">
+                    <img id="1" src="https://www.junkybooks.com/administrator/bookimages/62f124017ecbf1.29303027.jpg" class="rounded" alt="..." style="width: 100%; height: 100%;">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Beacon Technologies</h5>
+                      <p class="card-text">Document-1</p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 1 day ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div  class="card mb-3" style="width: 50vh;" (click)="card1('2')">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img id="2" src="https://www.junkybooks.com/administrator/bookimages/66085a9079af62.35572114.jpg" class="rounded" alt="..." style="width: 100%; height: 100%;">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Collected Essays</h5>
+                      <p class="card-text">Document-2</p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 1 day ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div  class="card mb-3" style="width: 50vh;" (click)="card1('3')">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img id="3" src="https://www.junkybooks.com/administrator/bookimages/63dd6b7c8487a5.58772946.jpg" class="rounded" alt="..." style="width: 100%; height: 100%;">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Matlab</h5>
+                      <p class="card-text">Document-3</p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 1 day ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div  class="card mb-3" style="width: 50vh;" (click)="card1('4')">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img  id="4" src="https://www.junkybooks.com/administrator/bookimages/65d3d57528a3c3.98019135.jpg" class="rounded" alt="..." style="width: 100%; height: 100%;">
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Document-1</p>
+                      <p class="card-text">Document-4</p>
                       <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                     </div>
                   </div>
                 </div>
               </div>
-            <div class="card mb-3" style="width: 50vh;">
+            <div class="card mb-3" style="width: 50vh;" (click)="card1('5')">
                 <div class="row g-0">
                   <div class="col-md-4">
-                    <img  src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/48/google-docs-1024.png" class="rounded" alt="..." style="width: 100%; height: 100%;">
+                    <img  id="5" src="https://www.junkybooks.com/administrator/bookimages/6429ed2126d082.68685862.jpg" class="rounded" alt="..." style="width: 100%; height: 100%;">
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Document-1</p>
-                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            <div class="card mb-3" style="width: 50vh;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img  src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/48/google-docs-1024.png" class="rounded" alt="..." style="width: 100%; height: 100%;">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Document-1</p>
-                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            <div class="card mb-3" style="width: 50vh;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img  src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/48/google-docs-1024.png" class="rounded" alt="..." style="width: 100%; height: 100%;">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Document-1</p>
-                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            <div class="card mb-3" style="width: 50vh;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img  src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/48/google-docs-1024.png" class="rounded" alt="..." style="width: 100%; height: 100%;">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Document-1</p>
+                      <p class="card-text">Document-5</p>
                       <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                     </div>
                   </div>
                 </div>
             </div>
-            <div class="card mb-3" style="width: 50vh;">
+            <div class="card mb-3" style="width: 50vh;" (click)="card1('6')">
                 <div class="row g-0">
                   <div class="col-md-4">
-                    <img  src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/48/google-docs-1024.png" class="rounded" alt="..." style="width: 100%; height: 100%;">
+                    <img  id="6" src="https://www.junkybooks.com/administrator/bookimages/63da5b4fda7a16.40803155.jpg" class="rounded" alt="..." style="width: 100%; height: 100%;">
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Document-1</p>
+                      <h5 class="card-title">Food And Wine ..</h5>
+                      <p class="card-text">Document-6</p>
                       <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                     </div>
                   </div>
                 </div>
             </div>
-            <div class="card mb-3" style="width: 50vh;">
+            <div  class="card mb-3" style="width: 50vh;" (click)="card1('7')">
                 <div class="row g-0">
                   <div class="col-md-4">
-                    <img  src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/48/google-docs-1024.png" class="rounded" alt="..." style="width: 100%; height: 100%;">
+                    <img  id="7" src="https://www.junkybooks.com/administrator/bookimages/63f2a24d32e592.06615953.jpg" class="rounded" alt="..." style="width: 100%; height: 100%;">
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Document-1</p>
+                      <h5 class="card-title">Authodesk</h5>
+                      <p class="card-text">Document-7</p>
                       <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                     </div>
                   </div>
                 </div>
             </div>
-            <div class="card mb-3" style="width: 50vh;">
+            <div  class="card mb-3" style="width: 50vh;" (click)="card1('8')">
                 <div class="row g-0">
                   <div class="col-md-4">
-                    <img  src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/48/google-docs-1024.png" class="rounded" alt="..." style="width: 100%; height: 100%;">
+                    <img  id="8" src="https://www.junkybooks.com/administrator/bookimages/632eda6aa5c6f9.80213699.PNG" class="rounded" alt="..." style="width: 100%; height: 100%;">
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Document-1</p>
+                      <h5 class="card-title">Guerilla Cardio</h5>
+                      <p class="card-text">Document-8</p>
                       <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                     </div>
                   </div>
                 </div>
             </div>
         </div>
-        
     </div>
 </div>
 </div>
