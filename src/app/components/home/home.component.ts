@@ -10,6 +10,25 @@ import { toArray } from 'rxjs';
 })
 
 export  class HomeComponent {
+
+  constructor() { }
+
+  openSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    if (sidebar) {
+      sidebar.style.left = "0";
+      document.getElementById("content")?.classList.add("content-push");
+    }
+  }
+
+  closeSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    if (sidebar) {
+      sidebar.style.left = "-250px"; /* Adjust to the negative of sidebar width */
+      document.getElementById("content")?.classList.remove("content-push");
+    }
+  }
+  
   card1 = async (idd: string) => {
     console.log(idd);
     const data = await fetch(`http://localhost:3000/books/${idd}`).then((res) =>
@@ -41,4 +60,9 @@ export  class HomeComponent {
  
     console.log(data);
   };
+
+
+ 
+
+
 }

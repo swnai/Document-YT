@@ -1,0 +1,261 @@
+.sidebar {
+    height: 100%;
+    width: 250px; /* Adjust the width as needed */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px; /* Start off the screen */
+    background-color: #ffffff;
+    overflow-y: auto; /* Enable scrolling */
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+  /* Adjust the position of the content when sidebar is open */
+  .content {
+    transition: margin-left 0.5s;
+    padding: 16px;
+  }
+
+  .content-push {
+    margin-left: 250px; /* Adjust according to sidebar width */
+  }
+
+
+
+
+
+
+
+
+
+
+  footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100vh;
+     
+      .nav-link {
+        color: black;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        text-decoration: none;
+     
+        hr {
+          margin: 0;
+          border-top: 1px solid black;
+        }
+      }
+     
+      .bottom-links {
+        margin-top: auto;
+      }
+    }
+    footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100vh;
+    }
+     
+    .nav-link {
+      color: black;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      text-decoration: none;
+    }
+     
+    .nav-link hr {
+      margin: 0;
+      border-top: 1px solid black;
+    }
+     
+    .bottom-links {
+      margin-top: auto;
+    }
+     
+    .logo-container {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+    }
+     
+    .logo-container img {
+      height: 30px; /* Adjust as needed */
+      margin-right: 10px; /* Add space between logo and text */
+    }
+     
+    .legal-solution {
+      font-weight: bold;
+      padding: 10px;
+    }
+    .pass{
+      border-left: 3px solid rgb(86, 34, 228);
+    }
+     
+  
+    .custom-shadow {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adjust shadow values as needed */
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+   
+    .nav-link {
+      color: black;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      text-decoration: none;
+   
+      hr {
+        margin: 0;
+        border-top: 1px solid black;
+      }
+    }
+   
+    .bottom-links {
+      margin-top: auto;
+    }
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-left: 20px;
+  }
+   
+  .nav-link {
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+  }
+   
+  .nav-link hr {
+    margin: 0;
+    border-top: 1px solid black;
+  }
+   
+  .bottom-links {
+    margin-top: auto;
+  }
+   
+  .logo-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+   
+  .logo-container img {
+    height: 30px; /* Adjust as needed */
+    margin-right: 10px; /* Add space between logo and text */
+  }
+   
+  .legal-solution {
+    font-weight: bold;
+    padding: 10px;
+  }
+  .pass{
+    border-left: 3px solid rgb(137, 179, 243);
+    height: 25px;
+  }
+  .form-control.fw-bold {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+  }
+  .textarea-container {
+  position: relative;
+  }
+  
+  .icon-container {
+  position: absolute;
+  bottom: 25px; /* Adjust the distance from the bottom as needed */
+  right: 5px; /* Adjust the distance from the right as needed */
+  }
+  
+  .icon-container i {
+  border-radius: 50%; /* Ensure your icon is round */
+  background-color: #fff; /* Match this with the background color of the textarea */
+  padding: 5px; /* Adjust as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow to the icon if desired */
+  }
+  
+  .plusbtn i{
+  border-radius: 50%; /* Ensure your icon is round */
+  background-color: #3a0a0a; /* Match this with the background color of the textarea */
+  padding: 2px; /* Adjust as needed */
+  box-shadow: px 0px 4px rgba(0, 0, 0, 0.1); 
+  background-color: #fff;
+  size: 3px;
+  }
+  .logo{
+  box-shadow: 0 6px 4px rgba(0, 0, 0, 0.1);
+  height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .sidebarv {
+    width: 80px;
+    height: 100vh;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .icon {
+    margin-bottom: 30px; /* Adjust the margin bottom as per your requirement */
+  }
